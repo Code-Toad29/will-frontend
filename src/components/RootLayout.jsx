@@ -4,6 +4,8 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import Hero from './Hero'
 import Companies from './Companies'
+import Home from '../pages/Home'
+import About from '../pages/About'
 
 function RootLayout() {
   return (
@@ -14,9 +16,16 @@ function RootLayout() {
         
         
         {/* All other pages will replace outlet */}
+        <Home/>
+        <Buy/>
+        <Rent/>
+        <Sell/>
+        <Contact/>
+        <About/>
+        
         
 
-        <Outlet />
+        <Outlet/>
         <Footer/>
         {/* Add footer */}
     </div>
