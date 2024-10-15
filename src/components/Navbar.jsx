@@ -203,9 +203,9 @@ const Navbar = () => {
                 {/* Menu section */}
                 <div className={`absolute md:static left-0 w-full md:w-auto bg-black transition-all duration-300 z-20 ${isOpen ? 'top-16' : 'top-[-200px]'}`}>
                     <ul className='flex flex-col md:flex-row gap-8 text-yellow-600 p-4 md:p-0' role="navigation">
-                        <li><Link to='/' className='hover:text-white' onClick={handleLinkClick}>Home</Link></li>
-                        <li><Link to='/buy' className='hover:text-white' onClick={handleLinkClick}>Buy</Link></li>
-                        <li><Link to='/rent' className='hover:text-white' onClick={handleLinkClick}>Rent</Link></li>
+                        <li><Link to='/home' className='hover:text-white' onClick={handleLinkClick}>Home</Link></li>
+                        <li><Link to='/marketplace' className='hover:text-white' onClick={handleLinkClick}>Marketplace</Link></li>
+        
                         <li><Link to='/sell' className='hover:text-white' onClick={handleLinkClick}>Sell</Link></li>
                         <li><Link to='/contact' className='hover:text-white' onClick={handleLinkClick}>Contact</Link></li>
                         <li>

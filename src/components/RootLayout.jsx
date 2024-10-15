@@ -6,6 +6,7 @@ import Hero from './Hero'
 import Companies from './Companies'
 import Home from '../pages/Home'
 import About from '../pages/About'
+import Marketplace from '../pages/Marketplace'
 
 function RootLayout() {
   return (
@@ -17,11 +18,11 @@ function RootLayout() {
         
         {/* All other pages will replace outlet */}
         <Home/>
-        <Buy/>
-        <Rent/>
+        <Marketplace/>
+       
         <Sell/>
-        <Contact/>
-        <About/>
+        <Contact/> 
+        <About/> 
         
         
 

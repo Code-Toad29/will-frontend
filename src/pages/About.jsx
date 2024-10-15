@@ -1,11 +1,11 @@
 import React from 'react'
-import 
 
-const About() {
+
+const About =()=> {
   return (
     <div></div>
   )
 }
 
 
-export default  About
+export default  About;
