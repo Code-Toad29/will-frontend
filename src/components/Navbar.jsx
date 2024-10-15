@@ -169,7 +169,6 @@
 
 // export default Navbar;
 import React, { useState } from 'react';
-import { PiShoppingCartLight } from 'react-icons/pi';
 import { MdMenu, MdFavorite } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
@@ -205,17 +204,12 @@ const Navbar = () => {
                     <ul className='flex flex-col md:flex-row gap-8 text-yellow-600 p-4 md:p-0' role="navigation">
                         <li><Link to='/home' className='hover:text-white' onClick={handleLinkClick}>Home</Link></li>
                         <li><Link to='/marketplace' className='hover:text-white' onClick={handleLinkClick}>Marketplace</Link></li>
-        
                         <li><Link to='/sell' className='hover:text-white' onClick={handleLinkClick}>Sell</Link></li>
+                        <li><Link to='/about' className='hover:text-white' onClick={handleLinkClick}>About</Link></li>
                         <li><Link to='/contact' className='hover:text-white' onClick={handleLinkClick}>Contact</Link></li>
                         <li>
                             <Link to='/favorites' className='text-yellow-600 hover:text-white transition duration-200' onClick={handleLinkClick}>
                                 <MdFavorite />
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to='/cart' className='text-yellow-600 hover:text-white transition duration-200' onClick={handleLinkClick}>
-                                <PiShoppingCartLight />
                             </Link>
                         </li>
                         <li>

@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function Sell() {
+const Sell=() =>{
   return (
     <div>Sell</div>
   )
 }
+
+export default Sell;

@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Residenciesjsx() {
+const Residenciesjsx =()=> {
   return (
     <div>Residenciesjsx</div>
   )
 }
 
 
-export default  Residencies
+export default  Residenciesjsx;

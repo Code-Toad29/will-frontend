@@ -68,8 +68,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home';
-import Buy from './pages/Buy';
-import Rent from './pages/Rent';
+import Marketplace from './pages/Marketplace';
 import Sell from './pages/Sell';
 import Contact from './pages/Contact';
 import Profile from './pages/Profile';
@@ -88,9 +87,10 @@ export default function App() {
       element: <RootLayout />,
       children: [
         {path:'/', element:<Home />},
-        {path:'/rent', element:<Rent />},
+        {path:'/marketplace',element:<Marketplace/>},
+        
         {path:'/sell', element:<Sell />},
-        {path:'/buy', element:<Buy />},
+       
         {path:'/contact', element:<Contact />}
       ]
      },
