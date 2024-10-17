@@ -7,7 +7,8 @@ import Companies from './Companies'
 import Home from '../pages/Home'
 import About from '../pages/About'
 import Marketplace from '../pages/Marketplace'
-
+  
+// keep root like this 
 function RootLayout() {
   return (
     <div>

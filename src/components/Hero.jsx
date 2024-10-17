@@ -5,7 +5,7 @@ import { FaSearch } from 'react-icons/fa';
 const Hero = () => {
     return (
         <div className='relative h-[25rem] flex'>
-            <img src='/background.png' className='object-cover w-full h-full' alt='Background' />
+            <img src='/Goldbackground.jng' className='object-cover w-full h-full' alt='Background' />
             <div className='absolute z-30 flex flex-col items-center justify-center w-full h-full p12'>
                 <p className='text-white text-[60px] text-center'>
                     A home is a place to start your story
