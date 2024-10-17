@@ -74,7 +74,7 @@ import Contact from './pages/Contact';
 import Profile from './pages/Profile';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
-import Hero from './components/Hero';
+import About from './pages/About';
 import Navbar from './components/Navbar';
 import Companies from './components/Companies';
 import RootLayout from './components/RootLayout';
@@ -90,6 +90,7 @@ export default function App() {
         {path:'/marketplace',element:<Marketplace/>},
         
         {path:'/sell', element:<Sell />},
+        {path:'/about',element:<About/>},
        
         {path:'/contact', element:<Contact />}
       ]
