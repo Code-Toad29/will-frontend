@@ -11,7 +11,7 @@ const Home = () => {
     
     {/* <Navbar/> */}
     <header>
-    <Navbar/>
+    
     </header>
     <Hero/>
     <Companies/>
@@ -19,7 +19,7 @@ const Home = () => {
 
 
     <h2>Home</h2>
-    <Footer/>
+    
     </>
   );
 }

@@ -12,17 +12,17 @@ function RootLayout() {
   return (
     <div>
         <Navbar />
-        <Hero/>
+        {/* <Hero/>
         <Companies/>
         
         
-        {/* All other pages will replace outlet */}
+        {/* All other pages will replace outlet *
         <Home/>
         <Marketplace/>
        
         <Sell/>
         <Contact/> 
-        <About/> 
+        <About/>  */}
         
         
 

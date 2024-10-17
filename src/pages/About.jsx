@@ -7,7 +7,7 @@ const About =()=> {
   return (
     <div>
     <header>
-    <Navbar/>
+    
     </header>
     <Aboutdes/>
     
