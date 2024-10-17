@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
+import Aboutdes from '../components/Aboutdes';
 
 
 const About =()=> {
@@ -8,6 +9,9 @@ const About =()=> {
     <header>
     <Navbar/>
     </header>
+    <Aboutdes/>
+    
+    
     
     </div>
   )

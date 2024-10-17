@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Residenciesjsx =()=> {
+ const Residencies =()=> {
   return (
-    <div>Residenciesjsx</div>
+    <div>Residencies</div>
   )
 }
 
 
-export default  Residenciesjsx;
+export default  Residencies;
