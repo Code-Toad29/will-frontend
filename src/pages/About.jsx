@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
 import Aboutdes from '../components/Aboutdes';
+import Aboutgoals from '../components/Aboutgoals';
 
 
 const About =()=> {
@@ -10,7 +11,9 @@ const About =()=> {
     
     </header>
     <Aboutdes/>
-    
+    <section>
+    <Aboutgoals/>
+    </section>
     
     
     </div>

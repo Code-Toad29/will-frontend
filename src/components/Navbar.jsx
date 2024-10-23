@@ -168,6 +168,8 @@
 // }
 
 // export default Navbar;
+
+
 import React, { useState } from 'react';
 import { MdMenu, MdFavorite } from 'react-icons/md';
 import { Link } from 'react-router-dom';
@@ -226,4 +228,3 @@ const Navbar = () => {
 }
 
 export default Navbar;
-
