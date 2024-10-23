@@ -70,7 +70,7 @@
 // export default Contact
 import React, { useState } from 'react';
 
-const Contact = ({ agents }) => {
+const Contact = ({ agents = [] }) => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',

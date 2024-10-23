@@ -568,26 +568,26 @@ const ResidenciesList = [
 ];
 
 
-// const Residencies = () => {
-//   return (
-//     <div>
-//       <h1>Residencies</h1>
-//       <ul>
-//         {ResidenciesList.map((residency, index) => (
-//           <li key={index}>
-//             <h2>{residency.title}</h2>
-//             <img src={residency.image} alt={residency.title} />
-//             <p>{residency.description}</p>
-//             <p>Price: {residency.price}</p>
-//             <p>Address: {residency.address}</p>
-//             <p>Area: {residency.area}</p>
-//             <p>Bedrooms: {residency.facilities.bedroom}</p>
-//             <p>Bathrooms: {residency.facilities.bathroom}</p>
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// };
+const Residencies = () => {
+  return (
+    <div>
+      <h1>Residencies</h1>
+      <ul>
+        {ResidenciesList.map((residency, index) => (
+          <li key={index}>
+            <h2>{residency.title}</h2>
+            <img src={residency.image} alt={residency.title} />
+            <p>{residency.description}</p>
+            <p>Price: {residency.price}</p>
+            <p>Address: {residency.address}</p>
+            <p>Area: {residency.area}</p>
+            <p>Bedrooms: {residency.facilities.bedroom}</p>
+            <p>Bathrooms: {residency.facilities.bathroom}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
-export default ResidenciesList;
+export default Residencies;

@@ -86,7 +86,7 @@ export default function App() {
       path: '/',
       element: <RootLayout />,
       children: [
-        {path:'/home', element:<Home />},
+        {path:'/', element:<Home />},
         {path:'/marketplace',element:<Marketplace/>},
         
         {path:'/sell', element:<Sell />},
