@@ -1,284 +1,26 @@
-// import React from 'react'
-
-//  const Residencies =()=> {
-//   return (
-//     <div>Residencies</div>
-//   )
-// }
-
-
-// const Residencies = [
-//   {
-//     title: "Luxury Apartment",
-//     image: "url_to_image_1.jpg",
-//     category: "Apartment",
-//     address: "123 Main St, Cityville",
-//     area: "1500 sqft",
-//     price: "$300,000",
-//     description: "A luxurious apartment with modern amenities.",
-//     facilities: {
-//       bedroom: 2,
-//       bathroom: 2,
-//     }
-//   },
-//   {
-//     title: "Cozy Cottage",
-//     image: "url_to_image_2.jpg",
-//     category: "Cottage",
-//     address: "456 Oak Rd, Townsville",
-//     area: "1200 sqft",
-//     price: "$250,000",
-//     description: "A cozy cottage surrounded by nature.",
-//     facilities: {
-//       bedroom: 3,
-//       bathroom: 1,
-//     }
-//   },
-//   {
-//     title: "Modern Loft",
-//     image: "url_to_image_3.jpg",
-//     category: "Loft",
-//     address: "789 Pine St, Cityville",
-//     area: "1800 sqft",
-//     price: "$400,000",
-//     description: "A stylish loft with high ceilings and open spaces.",
-//     facilities: {
-//       bedroom: 1,
-//       bathroom: 1,
-//     }
-//   },
-//   {
-//     title: "Family Home",
-//     image: "url_to_image_4.jpg",
-//     category: "Single Family Home",
-//     address: "321 Maple Ave, Townsville",
-//     area: "2000 sqft",
-//     price: "$350,000",
-//     description: "A spacious home perfect for families.",
-//     facilities: {
-//       bedroom: 4,
-//       bathroom: 2,
-//     }
-//   },
-//   {
-//     title: "Beachfront Villa",
-//     image: "url_to_image_5.jpg",
-//     category: "Villa",
-//     address: "555 Ocean Blvd, Beach City",
-//     area: "2500 sqft",
-//     price: "$1,200,000",
-//     description: "A stunning villa with ocean views.",
-//     facilities: {
-//       bedroom: 5,
-//       bathroom: 4,
-//     }
-//   },
-//   {
-//     title: "Charming Bungalow",
-//     image: "url_to_image_6.jpg",
-//     category: "Bungalow",
-//     address: "789 Cedar St, Suburbia",
-//     area: "1000 sqft",
-//     price: "$200,000",
-//     description: "A quaint bungalow in a quiet neighborhood.",
-//     facilities: {
-//       bedroom: 2,
-//       bathroom: 1,
-//     }
-//   },
-//   {
-//     title: "Penthouse Suite",
-//     image: "url_to_image_7.jpg",
-//     category: "Penthouse",
-//     address: "111 High Rise St, Cityville",
-//     area: "3000 sqft",
-//     price: "$2,000,000",
-//     description: "A luxurious penthouse with a panoramic city view.",
-//     facilities: {
-//       bedroom: 3,
-//       bathroom: 3,
-//     }
-//   },
-//   {
-//     title: "Suburban Townhouse",
-//     image: "url_to_image_8.jpg",
-//     category: "Townhouse",
-//     address: "222 Elm St, Suburbia",
-//     area: "1400 sqft",
-//     price: "$280,000",
-//     description: "A modern townhouse close to parks and schools.",
-//     facilities: {
-//       bedroom: 3,
-//       bathroom: 2,
-//     }
-//   },
-//   {
-//     title: "Rustic Farmhouse",
-//     image: "url_to_image_9.jpg",
-//     category: "Farmhouse",
-//     address: "333 Country Rd, Rural Area",
-//     area: "2500 sqft",
-//     price: "$400,000",
-//     description: "A charming farmhouse with plenty of land.",
-//     facilities: {
-//       bedroom: 4,
-//       bathroom: 2,
-//     }
-//   },
-//   {
-//     title: "Stylish Condo",
-//     image: "url_to_image_10.jpg",
-//     category: "Condominium",
-//     address: "444 Urban Way, Cityville",
-//     area: "1200 sqft",
-//     price: "$350,000",
-//     description: "A modern condo with urban amenities.",
-//     facilities: {
-//       bedroom: 2,
-//       bathroom: 2,
-//     }
-//   },
-//   {
-//     title: "Eco-Friendly Home",
-//     image: "url_to_image_11.jpg",
-//     category: "Eco Home",
-//     address: "555 Green St, Eco Town",
-//     area: "1800 sqft",
-//     price: "$450,000",
-//     description: "A sustainable home with green features.",
-//     facilities: {
-//       bedroom: 3,
-//       bathroom: 2,
-//     }
-//   },
-//   {
-//     title: "Luxury Chalet",
-//     image: "url_to_image_12.jpg",
-//     category: "Chalet",
-//     address: "666 Mountain Rd, Ski Resort",
-//     area: "2300 sqft",
-//     price: "$800,000",
-//     description: "A beautiful chalet with mountain views.",
-//     facilities: {
-//       bedroom: 5,
-//       bathroom: 4,
-//     }
-//   },
-//   {
-//     title: "Historic Mansion",
-//     image: "url_to_image_13.jpg",
-//     category: "Mansion",
-//     address: "777 Heritage Blvd, Old Town",
-//     area: "5000 sqft",
-//     price: "$2,500,000",
-//     description: "A grand mansion with historical significance.",
-//     facilities: {
-//       bedroom: 6,
-//       bathroom: 5,
-//     }
-//   },
-//   {
-//     title: "Urban Studio",
-//     image: "url_to_image_14.jpg",
-//     category: "Studio",
-//     address: "888 City Center, Cityville",
-//     area: "600 sqft",
-//     price: "$150,000",
-//     description: "A compact studio in the heart of the city.",
-//     facilities: {
-//       bedroom: 1,
-//       bathroom: 1,
-//     }
-//   },
-//   {
-//     title: "Luxury Ranch",
-//     image: "url_to_image_15.jpg",
-//     category: "Ranch",
-//     address: "999 Ranch Rd, Countryside",
-//     area: "3500 sqft",
-//     price: "$1,000,000",
-//     description: "A luxurious ranch with vast land.",
-//     facilities: {
-//       bedroom: 4,
-//       bathroom: 3,
-//     }
-//   },
-//   {
-//     title: "Contemporary Duplex",
-//     image: "url_to_image_16.jpg",
-//     category: "Duplex",
-//     address: "1010 Twin St, Cityville",
-//     area: "2000 sqft",
-//     price: "$450,000",
-//     description: "A modern duplex with spacious living areas.",
-//     facilities: {
-//       bedroom: 4,
-//       bathroom: 3,
-//     }
-//   },
-//   {
-//     title: "Stylish Tiny Home",
-//     image: "url_to_image_17.jpg",
-//     category: "Tiny Home",
-//     address: "1111 Small St, Minimalist Town",
-//     area: "400 sqft",
-//     price: "$80,000",
-//     description: "A chic tiny home for minimalist living.",
-//     facilities: {
-//       bedroom: 1,
-//       bathroom: 1,
-//     }
-//   },
-//   {
-//     title: "Urban Loft Conversion",
-//     image: "url_to_image_18.jpg",
-//     category: "Converted Loft",
-//     address: "1212 Warehouse St, Cityville",
-//     area: "2200 sqft",
-//     price: "$500,000",
-//     description: "A converted warehouse loft with industrial charm.",
-//     facilities: {
-//       bedroom: 2,
-//       bathroom: 2,
-//     }
-//   },
-//   {
-//     title: "Seaside Cottage",
-//     image: "url_to_image_19.jpg",
-//     category: "Cottage",
-//     address: "1313 Coastal Rd, Seaside Town",
-//     area: "1000 sqft",
-//     price: "$250,000",
-//     description: "A charming cottage just steps from the beach.",
-//     facilities: {
-//       bedroom: 2,
-//       bathroom: 1,
-//     }
-//   },
-//   {
-//     title: "Gated Community Home",
-//     image: "url_to_image_20.jpg",
-//     category: "Community Home",
-//     address: "1414 Secure Ln, Gated Community",
-//     area: "2000 sqft",
-//     price: "$600,000",
-//     description: "A safe and secure home in a gated community.",
-//     facilities: {
-//       bedroom: 4,
-//       bathroom: 3,
-//     }
-//   }
-// ];
-
-// export default Residencies;
-
 
 import React from 'react';
 
+// const ResidenciesList = [
+//   {
+//     title: "1 Bedroom Apartment / Flat for Sale in Rocklands",
+//     image: "C:\Users\Dell\Desktop\Will Project\client\public\Buy\Apartement\1\1.png",
+//     category: "Apartment",
+//     address: "123 Main St, Cityville",
+//     area: "1500 sqft",
+//     price: "R400,000",
+//     description: "Perfect Getaway Studio Apartment in Port Edward",
+//     facilities: {
+//       bedroom: 1,
+//       bathroom: 1,
+//     }
+//    },
+
+
 const ResidenciesList = [
-  {
+    {
     title: "1 Bedroom Apartment / Flat for Sale in Rocklands",
-    image: "url_to_image_1.jpg",
+    image: "/Buy/Apartement/1/1.png", // Correct relative path
     category: "Apartment",
     address: "123 Main St, Cityville",
     area: "1500 sqft",
@@ -287,12 +29,12 @@ const ResidenciesList = [
     facilities: {
       bedroom: 1,
       bathroom: 1,
-
     }
   },
+
   {
-    title: " 2 Bedroom Apartment / Flat for Sale in De Waterkant",
-    image: "url_to_image_2.jpg",
+    title: "2 Bedroom Apartment / Flat for Sale in De Waterkant",
+    image: "/Buy/Apartement/2/2.png", // Use the correct relative path
     category: "Apartment",
     address: "456 Oak Rd, Townsville",
     area: "100 m2",
@@ -303,6 +45,7 @@ const ResidenciesList = [
       bathroom: 2,
     }
   },
+  
   // {
   //   title: "Modern Loft",
   //   image: "url_to_image_3.jpg",
@@ -318,7 +61,7 @@ const ResidenciesList = [
   // },
   {
     title: "Houghton Estate",
-    image: "url_to_image_4.jpg",
+    image: "/Buy/CommercialProperty/2/1.png", // Correct relative path
     category: "Commercial Property",
     address: "321 Maple Ave, Townsville",
     area: "714 m2",
@@ -329,9 +72,10 @@ const ResidenciesList = [
       bathroom: 1,
     }
   },
+  
   {
     title: "Bloemfontein Rural",
-    image: "url_to_image_5.jpg",
+    image: "/Buy/Farm/1/1.png", // Correct relative path
     category: "Farm",
     address: "555 Ocean Blvd, Beach City",
     area: "126.01ha",
@@ -344,7 +88,7 @@ const ResidenciesList = [
   },
   {
     title: "Farm for Sale in Schaapkraal",
-    image: "url_to_image_6.jpg",
+    image: "/Buy/Farm/2/1.png", // Correct relative path
     category: "Farm",
     address: "789 Cedar St, Suburbia",
     area: "47ha",
@@ -355,10 +99,11 @@ const ResidenciesList = [
       bathroom: 7,
     }
   },
+  
   {
     title: "4 Bedroom House for Sale in Pellissier",
-    image: "url_to_image_7.jpg",
-    category:"Home",
+    image: "/Buy/Home/1/1.png", // Correct relative path
+    category: "Home",
     address: "111 High Rise St, Cityville",
     area: "1145 m2",
     price: "R 1,500,000",
@@ -368,58 +113,76 @@ const ResidenciesList = [
       bathroom: 3,
     }
   },
-  {
-    title: "3 Bedroom House for Sale in Grassland",
-    image: "url_to_image_8.jpg",
-    category: "Home",
-    address: "222 Elm St, Suburbia",
-    area: "108 m2",
-    price: "R 1,230,000",
-    description: "Buy your First Brand New house direct from the Developer and Save on Transfer Fees !.",
-    facilities: {
-      bedroom: 3,
-      bathroom: 2,
-    }
-  },
-  {
-    title: "Industrial Property for Sale in Waterfall",
-    image: "url_to_image_9.jpg",
-    category: "Industrail Property",
-    address: "333 Country Rd, Rural Area",
-    area: "149 m2",
-    price: "R 999,000",
-    description: "Secure Unit in a Popular Industrial Park",
-    facilities: {
-      bedroom: 0,
-      bathroom: 2,
-    }
-  },
-  {
-    title: "Industrial Property for Sale in Laboria",
-    image: "url_to_image_10.jpg",
-    category: "Industrail Property",
-    address: "444 Urban Way, Cityville",
-    area: "1492 m2",
-    price: "R 4,500,000",
-    description: "Premium Industrial Property with Offices in Upmarket Upington Area",
-    facilities: {
-      bedroom: 0,
-      bathroom: 2,
-    }
-  },
-  {
-    title: "Vacant Land / Plot for Sale in Pumula",
-    image: "url_to_image_11.jpg",
-    category: "Plot",
-    address: "555 Green St, Eco Town",
-    area: "2023 m2",
-    price: "R 690,000",
-    description: "Prime Stand with Breathtaking Views over looking the Indian Ocean! Zoned for multiple Units.",
-    facilities: {
-      bedroom: 0,
-      bathroom: 0,
-    }
-  },
+  
+//   {
+//   title: "3 Bedroom House for Sale in Grassland",
+//   image: "/Buy/Home/1/1.png", // Correct relative path
+//   category: "Home",
+//   address: "111 High Rise St, Cityville",
+//   area: "1145 m2",
+//   price: "R 1,500,000",
+//   description: "Here is where versatility converges with space and beauty!",
+//   facilities: {
+//     bedroom: 4,
+//     bathroom: 3,
+//   }
+// },
+{
+  title: "3 Bedroom House for Sale in Grassland", // Correct the property name
+  image: "/Buy/Home/2/1.png", // Correct relative path for the image
+  category: "Home",
+  address: "222 Elm St, Suburbia", // Assuming you want to specify an address
+  area: "108 m2",
+  price: "R 1,230,000",
+  description: "Buy your First Brand New house direct from the Developer and Save on Transfer Fees!",
+  facilities: {
+    bedroom: 3,
+    bathroom: 2,
+  }
+},
+
+{
+  title: "Industrial Property for Sale in Waterfall",
+  image: "/Buy/IndustrialProperty/1/1.png", // Corrected image path
+  category: "Industrial Property", // Fixed typo in "Industrial"
+  address: "333 Country Rd, Rural Area",
+  area: "149 m²", // Using proper formatting for square meters
+  price: "R 999,000",
+  description: "Secure Unit in a Popular Industrial Park",
+  facilities: {
+    bedroom: 0,
+    bathroom: 2,
+  }
+},
+
+{
+  title: "Industrial Property for Sale in Laboria",
+  image: "/Buy/IndustrialProperty/2/1.png", // Corrected image path
+  category: "Industrial Property", // Fixed typo in "Industrial"
+  address: "444 Urban Way, Cityville",
+  area: "1492 m²", // Using proper formatting for square meters
+  price: "R 4,500,000",
+  description: "Premium Industrial Property with Offices in Upmarket Upington Area",
+  facilities: {
+    bedroom: 0,
+    bathroom: 2,
+  }
+},
+
+{
+  title: "Vacant Land / Plot for Sale in Pumula",
+  image: "/Buy/Plot/1/1.png", // Corrected image path
+  category: "Plot",
+  address: "555 Green St, Eco Town",
+  area: "2023 m²", // Using proper formatting for square meters
+  price: "R 690,000",
+  description: "Prime Stand with Breathtaking Views overlooking the Indian Ocean! Zoned for multiple units.",
+  facilities: {
+    bedroom: 0,
+    bathroom: 0,
+  }
+},
+
   // {
   //   title: "Luxury Chalet",
   //   image: "url_to_image_12.jpg",
@@ -435,12 +198,12 @@ const ResidenciesList = [
   // },
   {
     title: "2 Bedroom Townhouse for Sale in Westering",
-    image: "url_to_image_13.jpg",
-    category: "Town house",
+    image: "/Buy/Townhouse/1/1.png", // Corrected image path
+    category: "Townhouse", // Fixed category casing
     address: "777 Heritage Blvd, Old Town",
-    area: "83 m2",
-    price: "R 880,000 ",
-    description: "Picture Perfect beautiful cottage style home",
+    area: "83 m²", // Proper formatting for square meters
+    price: "R 880,000",
+    description: "Picture-perfect, beautiful cottage-style home.", // Minor grammatical adjustments
     facilities: {
       bedroom: 2,
       bathroom: 2,
@@ -448,17 +211,18 @@ const ResidenciesList = [
   },
   {
     title: "2 Bedroom Townhouse for Sale in Sunnyside",
-    image: "url_to_image_14.jpg",
-    category: "Town house",
+    image: "/Buy/Townhouse/2/1.png", // Corrected image path
+    category: "Townhouse", // Fixed category casing
     address: "888 City Center, Cityville",
-    area:"86 m2",
+    area: "86 m²", // Proper formatting for square meters
     price: "R 370,000",
-    description: "Duplex for sale in Sunnyside East",
+    description: "Duplex for sale in Sunnyside East.",
     facilities: {
       bedroom: 2,
       bathroom: 1,
     }
   },
+  
   // {
   //   title: "Luxury Ranch",
   //   image: "url_to_image_15.jpg",
@@ -476,10 +240,10 @@ const ResidenciesList = [
   // Comerial Propert to Rent
   {
     title: "Commercial Property to Rent in Glenwood",
-    image: "url_to_image_16.jpg",
+    image: "/Rent/CommercialProperty/1/1.png", // Corrected image path
     category: "Commercial Property",
     address: "1010 Twin St, Cityville",
-    area: "116 m2",
+    area: "116 m²", // Proper formatting for square meters
     price: "R 17,632",
     description: "A modern duplex with spacious living areas.",
     facilities: {
@@ -487,22 +251,23 @@ const ResidenciesList = [
       bathroom: 1,
     }
   },
+  
   // Farm to RENT
 
   {
     title: "Farm to Rent in Benoni Ah",
-    image: "url_to_image_17.jpg",
+    image: "/Rent/Farm/1/1.png", // Corrected image path
     category: "Farm",
     address: "1111 Small St, Minimalist Town",
-    area: "1600 m2",
-    price: "R 13,800 ",
+    area: "1600 m²", // Proper formatting for square meters
+    price: "R 13,800",
     description: "Well equipped stable yard for rental",
     facilities: {
       bedroom: 0,
       bathroom: 1,
     }
   },
-
+  
   // {
   //   title: "Urban Loft Conversion",
   //   image: "url_to_image_18.jpg",
@@ -521,48 +286,50 @@ const ResidenciesList = [
 
   {
     title: "Industrial Property to Rent in Springfield",
-    image: "url_to_image_19.jpg",
+    image: "/Rent/IndustrialProperty/1/1.png", // Corrected image path
     category: "Industrial Property",
     address: "1313 Coastal Rd, Seaside Town",
-    area: "2500 m2",
-    price: "R 212,500 ",
-    description: "Prime 2500m² Warehouse with Expansive Yard & High Power Capacity in Springfield  Perfect for Your Needs",
+    area: "2500 m²", // Proper formatting for square meters
+    price: "R 212,500",
+    description: "Prime 2500m² Warehouse with Expansive Yard & High Power Capacity in Springfield. Perfect for Your Needs.",
     facilities: {
       bedroom: 0,
       bathroom: 2,
     }
   },
+  
    
 // Vancant Plot to rent
 
-  {
-    title: "Vacant Land / Plot to Rent in Caledon Estate",
-    image: "url_to_image_20.jpg",
-    category: "Plot",
-    address: "1414 Secure Ln, Gated Community",
-    area: "1000m2",
-    price: "R20,000",
-    description: "Vacant Land To Rent in Caledon Estate Ballito KwaZulu Natal",
-    facilities: {
-      bedroom: 0,
-      bathroom: 0,
-    }
-  },
-// Town hoyuse to Rent
+{
+  title: "Vacant Land / Plot to Rent in Caledon Estate",
+  image: "/Rent/Plot/1/1.png", // Fixed the image path to use forward slashes
+  category: "Plot",
+  address: "1414 Secure Ln, Gated Community",
+  area: "1000 m²", // Added space for better readability
+  price: "R 20,000", // Added space for better readability
+  description: "Vacant Land To Rent in Caledon Estate, Ballito, KwaZulu Natal",
+  facilities: {
+    bedroom: 0,
+    bathroom: 0,
+  }
+},
 
-  {
-    title: "2 Bedroom Townhouse to Rent in Langenhovenpark",
-    image: "url_to_image_20.jpg",
-    category: "Town House",
-    address: "1414 Secure Ln, Gated Community",
-    area: "82 m2",
-    price: "R7,500",
-    description: "2 Bedroom Townhouse to Rent in Langenhovenpark",
-    facilities: {
+// Town hoyuse to Rent
+{
+  title: "2 Bedroom Townhouse to Rent in Langenhovenpark",
+  image: "/Rent/Townhouse/1/1.png", // Changed backslashes to forward slashes
+  category: "Town House",
+  address: "1414 Secure Ln, Gated Community",
+  area: "82 m²", // Added space for better readability
+  price: "R 7,500", // Added space for better readability
+  description: "2 Bedroom Townhouse to Rent in Langenhovenpark",
+  facilities: {
       bedroom: 2,
       bathroom: 1,
-    }
-  },
+  }
+},
+
   // ... (rest of the properties)
 
 ];

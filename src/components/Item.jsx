@@ -45,20 +45,19 @@
 
 
 //     )
-// }
 
-// export default Item;
+// export default Item,
 import React from "react";
-import { Link } from "react-router-dom"; // Ensure this import is present
-import FavButton from "FavButton"; // Ensure the filename matches
+import { Link } from "react-router-dom"; // Make sure to import Link
+import FavButton from "./Favbutton";
 import { MdOutlineBathtub, MdOutlineBed, MdOutlineGarage } from "react-icons/md";
+
 
 const Item = ({ property }) => {
     return (
         <div className="rounded-2xl p-5 bg-white">
             <div className="relative">
                 <img src={property.image} alt={property.title} className="rounded" />
-                {/* Favorite Button */}
                 <FavButton />
             </div>
             <div>
@@ -75,15 +74,15 @@ const Item = ({ property }) => {
                     <MdOutlineBathtub />
                     {property.facilities.bathrooms}
                 </div>
-                <div className='flex items-center gap-x-2 font-medium'>
+                <div className='flex items-center gap-x-2'>
                     <MdOutlineGarage />
                     {property.facilities.parking}
                 </div>
             </div>
             <p>{property.description}</p>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center mt-4">
                 <div>${property.price}.00</div>
-                <Link to="/">
+                <Link to={"/"}>
                     <button className='btn-secondary rounded py-2 px-5 shadow-sm'>
                         View Details
                     </button>
@@ -91,6 +90,6 @@ const Item = ({ property }) => {
             </div>
         </div>
     );
-}
+};
 
 export default Item;
