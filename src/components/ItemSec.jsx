@@ -147,13 +147,13 @@
 
 // chat
 import React from "react";
-import FavButton from "./FavButton";
 import {
   MdOutlineBathtub,
   MdOutlineBed,
   MdOutlineGarage,
 } from "react-icons/md";
 import { Link } from "react-router-dom";
+import FavButton from "./FavButton";
 
 const Item = ({ property }) => {
   return (
