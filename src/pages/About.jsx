@@ -1,24 +1,44 @@
-import React from 'react'
-import Navbar from '../components/Navbar';
-import Aboutdes from '../components/Aboutdes';
-import Aboutgoals from '../components/Aboutgoals';
+// import React from 'react'
+// import Navbar from '../components/Navbar';
+// import Aboutdes from '../components/Aboutdes';
+// import Aboutgoals from '../components/Aboutgoals';
 
+// const About =()=> {
+//   return (
+//     <div>
+//     <header>
 
-const About =()=> {
+//     </header>
+//     <Aboutdes/>
+//     <section>
+//     <Aboutgoals/>
+//     </section>
+
+//     </div>
+//   )
+// }
+
+// export default  About;
+import React from "react";
+import Navbar from "../components/Navbar"; // If you want to use Navbar, uncomment this line
+import Aboutdes from "../components/Aboutdes";
+import Aboutgoals from "../components/Aboutgoals";
+
+const About = () => {
   return (
     <div>
-    <header>
-    
-    </header>
-    <Aboutdes/>
-    <section>
-    <Aboutgoals/>
-    </section>
-    
-    
+      <header>
+        {/* Uncomment the next line if you want to include the Navbar */}
+        {/* <Navbar /> */}
+      </header>
+      <main>
+        <Aboutdes />
+        <section>
+          <Aboutgoals />
+        </section>
+      </main>
     </div>
-  )
-}
+  );
+};
 
-
-export default  About;
+export default About;
