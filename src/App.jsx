@@ -2,7 +2,7 @@
 // import Hero  from  './components/Hero';
 // import Navbar from './components/Navbar';
 // import Companies from './components/Companies';
-// import { BrowserRouter,Routes,createBrowserRouter,RouterProvider } from 'react-router-dom'; 
+// import { BrowserRouter,Routes,createBrowserRouter,RouterProvider } from 'react-router-dom';
 // import RootLayout from './components/RootLayout';
 
 // function App() {
@@ -14,12 +14,6 @@
 //       <Companies/>
 //       </div>);
 
-        
-  
-
-
-  
-    
 // };
 // export default App;
 // import{BrowserRouter,Routes,Route} from 'react-router-dom';
@@ -43,7 +37,7 @@
 //       <Hero/>
 //       </div>
 //       <Companies/>
-//       </div>);    
+//       </div>);
 // };
 // export default App;
 // export default function App(){
@@ -59,67 +53,64 @@
 //         <Route path='/sign-in' element={<SignIn />} />
 //         <Route path='/sign-up' element={<SignUp />} />
 
-
 //       </Routes>
-
 
 //       </BrowserRouter>
 // }
-import React from 'react';
-import { BrowserRouter, Routes, Route, createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Home from './pages/Home';
-import Marketplace from './pages/Marketplace';
-import Sell from './pages/Sell';
-import Contact from './pages/Contact';
-import Profile from './pages/Profile';
-import SignIn from './pages/SignIn';
-import SignUp from './pages/SignUp';
-import About from './pages/About';
-import Navbar from './components/Navbar';
-import Companies from './components/Companies';
-import RootLayout from './components/RootLayout';
+import React from "react";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+import Home from "./pages/Home";
+import Marketplace from "./pages/Marketplace";
+import Sell from "./pages/Sell";
+import Contact from "./pages/Contact";
+import Profile from "./pages/Profile";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import About from "./pages/About";
+import Navbar from "./components/Navbar";
+import Companies from "./components/Companies";
+import RootLayout from "./components/RootLayout";
 
 export default function App() {
-
   const router = createBrowserRouter([
-     {
-      path: '/',
+    {
+      path: "/",
       element: <RootLayout />,
       children: [
-        {path:'/', element:<Home />},
-        {path:'/marketplace',element:<Marketplace/>},
-        
-        {path:'/sell', element:<Sell />},
-        {path:'/about',element:<About/>},
-       
-        {path:'/contact', element:<Contact />}
-      ]
-     },
-    ])
+        { path: "/", element: <Home /> },
+        { path: "/marketplace", element: <Marketplace /> },
 
+        { path: "/sell", element: <Sell /> },
+        { path: "/about", element: <About /> },
 
-        // <Route path='/buy' element={<Buy />} />
-        // <Route path='/rent' element={<Rent />} />
-        // <Route path='/sell' element={<Sell />} />
-        // <Route path='/contact' element={<Contact />} />
-        // <Route path='/profile' element={<Profile />} />
-        // <Route path='/sign-in' element={<SignIn />} />
-        // <Route path='/sign-up' element={<SignUp />} />
+        { path: "/contact", element: <Contact /> },
+      ],
+    },
+  ]);
 
-  return (
-    <RouterProvider router={router}/>
+  // <Route path='/buy' element={<Buy />} />
+  // <Route path='/rent' element={<Rent />} />
+  // <Route path='/sell' element={<Sell />} />
+  // <Route path='/contact' element={<Contact />} />
+  // <Route path='/profile' element={<Profile />} />
+  // <Route path='/sign-in' element={<SignIn />} />
+  // <Route path='/sign-up' element={<SignUp />} />
 
-  );
+  return <RouterProvider router={router} />;
 }
 
-
-{/* <Navbar />
+{
+  /* <Navbar />
 <Hero />
 <Companies />
 {/* <Routes>
   
-</Routes> */} 
-
-
-
-
+</Routes> */
+}

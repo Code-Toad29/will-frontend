@@ -1,8 +1,13 @@
-import React from 'react'
+import React from "react";
+import Properties from "../components/Properties";
 
-export default function Marketplace() {
+const Marketplace = () => {
   return (
-    <div>Marketplace</div>
-    
-  )
-}
+    <div>
+      Marketplace
+      <Properties />
+    </div>
+  );
+};
+
+export default Marketplace;
