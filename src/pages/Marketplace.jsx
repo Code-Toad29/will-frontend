@@ -19,7 +19,6 @@
 import React from "react";
 import Properties from "../components/Properties";
 import SearchFilters from "../components/SearchFilter";
-import SearchComponent from "./SearchComponent";
 
 const Marketplace = () => {
   return (
