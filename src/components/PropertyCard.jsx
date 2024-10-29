@@ -106,7 +106,7 @@
 
 // export default PropertyCard;
 
-// PropertyCard.js
+PropertyCard.js;
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
