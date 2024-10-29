@@ -1,19 +1,62 @@
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
-    gap: 20px; /* Space between items */
-    padding: 20px; /* Padding around the grid */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-container > div {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgb(3, 3, 3);
+  text-align: center;
+  transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.grid-container > div:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Example font */
+  font-size: 2em; /* Example font size */
+}
+
+@media (max-width: 800px) {
+  .grid-container {
+      grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media (max-width: 500px) {
+  .grid-container {
+      grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+  /* .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns 
+    gap: 20px; /* Space between items 
+    padding: 20px; /* Padding around the grid 
+  } */
   
-  .grid-container > div { /* Styles for each item */
-    border: 1px solid #ddd; /* Optional border */
-    border-radius: 5px; /* Optional rounded corners */
-    padding: 10px; /* Inner padding */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
-    text-align: center; /* Center the content */
+  /* .grid-container > div { /* Styles for each item 
+    border: 1px solid ; /* Optional border 
+    border-radius: 5px; /* Optional rounded corners 
+    padding: 10px; /* Inner padding 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow 
+    text-align: center; /* Center the content 
   }
   
   h1 {
-    text-align: center; /* Center the title */
+    text-align: center; /* Center the title 
   }
   
+    */
