@@ -1,4 +1,4 @@
-//test
+// test
 import React from "react";
 import Item from "./ItemSec";
 import ResidenciesList, { residenciesList } from "./Residencies";
