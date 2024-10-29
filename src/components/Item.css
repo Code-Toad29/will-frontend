@@ -11,7 +11,7 @@
     background-color: white;
     border-radius: 12px;
     padding: 16px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgb(255, 254, 254);
     transition: transform 0.2s;
 }
 
