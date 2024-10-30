@@ -1,6 +1,7 @@
+//mpney
 // import React, { useEffect, useState } from "react";
 // import { useParams } from "react-router-dom";
-// import Loader from "../components/Loader";
+// import Loader from "../components/Loader"; // Ensure you have a Loader component
 
 // const PropertyDetails = () => {
 //   const { listingId } = useParams();
@@ -11,9 +12,11 @@
 //   const getPropertyDetails = async () => {
 //     try {
 //       const response = await fetch(
-//         `http://localhost:3001/properties/${listingId}`
+//         `http://localhost:5000/api/listings/get/${listingId}`
 //       );
 //       if (!response.ok) {
+//         const errors = await response.json();
+//         console.log(errors);
 //         throw new Error("Failed to fetch property details");
 //       }
 //       const data = await response.json();
@@ -40,17 +43,21 @@
 //     <div className="property-details">
 //       <h1>{property.name}</h1>
 //       <div className="images">
-//         {property.imageUrls.map((url, index) => (
-//           <img
-//             key={index}
-//             src={url}
-//             alt={property.name}
-//             onError={(e) => {
-//               e.target.onerror = null;
-//               e.target.src = "fallback-image-url";
-//             }}
-//           />
-//         ))}
+//         {property.imageUrls && property.imageUrls.length > 0 ? (
+//           property.imageUrls.map((url, index) => (
+//             <img
+//               key={index}
+//               src={url}
+//               alt={property.name}
+//               onError={(e) => {
+//                 e.target.onerror = null;
+//                 e.target.src = "fallback-image-url"; // Replace with your fallback image URL
+//               }}
+//             />
+//           ))
+//         ) : (
+//           <p>No images available</p> // Fallback if no images are available
+//         )}
 //       </div>
 //       <p>{property.description}</p>
 //       <h3>Address: {property.address}</h3>
@@ -69,7 +76,7 @@
 
 // export default PropertyDetails;
 
-//mpney
+// prop
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Loader from "../components/Loader"; // Ensure you have a Loader component

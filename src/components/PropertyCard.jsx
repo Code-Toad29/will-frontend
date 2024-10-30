@@ -1,4 +1,4 @@
-// // PropertyCard.js
+// PropertyCard.js
 // import React from "react";
 // import PropTypes from "prop-types";
 // import "./PropertyCard.css";
@@ -50,8 +50,8 @@
 
 // export default PropertyCard;
 
-// PropertyCard.js
-// 2
+// PropertyCard.js;
+// 2;
 // import React from "react";
 // import PropTypes from "prop-types";
 // import { Link } from "react-router-dom";
@@ -106,7 +106,7 @@
 
 // export default PropertyCard;
 
-PropertyCard.js;
+// PropertyCard.js;
 import React from "react";
 import { useNavigate } from "react-router-dom";
 

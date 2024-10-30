@@ -68,7 +68,7 @@ const Item = ({ property }) => {
     <div className="rounded-2xl p-5 bg-white shadow-md">
       <div className="relative">
         <img
-          src={property?.imageUrls[0]}
+          src={property?.imageUrls[0] || ""}
           alt={property?.title || "Property Image"}
           className="rounded-lg w-full h-auto"
         />

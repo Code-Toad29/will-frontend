@@ -1,7 +1,6 @@
 // test
 import React, { useEffect, useState } from "react";
 import Item from "./ItemSec";
-import ResidenciesList, { residenciesList } from "./Residencies";
 import {
   Carousel,
   CarouselContent,
@@ -35,7 +34,7 @@ const Properties = ({ layout = "carousel" }) => {
           <CarouselContent>
             {properties.map((property) => (
               <CarouselItem
-                key={property.id}
+                key={property._id}
                 className="basis-1/3 md:basis-1/5"
               >
                 <Item property={property} />
@@ -47,7 +46,7 @@ const Properties = ({ layout = "carousel" }) => {
         </Carousel>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {residenciesList.map((property) => (
+          {properties.map((property) => (
             <div className="basis-1/3 md:basis-1/5" key={property._id}>
               <Item property={property} />
             </div>
