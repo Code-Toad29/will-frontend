@@ -63,7 +63,7 @@ export default function App() {
         { path: "/profile", element: <Profile /> },
         { path: "/sign-in", element: <SignIn /> },
         { path: "/sign-up", element: <SignUp /> },
-        { path: "/listing/:listingId", element: <PropertyDetails /> }, // Route for property details
+        { path: "/property/:listingId", element: <PropertyDetails /> }, // Route for property details
       ],
     },
   ]);

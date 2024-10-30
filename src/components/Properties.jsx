@@ -1,5 +1,5 @@
 // test
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Item from "./ItemSec";
 import ResidenciesList, { residenciesList } from "./Residencies";
 import {
@@ -11,6 +11,21 @@ import {
 } from "../components/ui/carousel";
 
 const Properties = ({ layout = "carousel" }) => {
+  const [properties, setProperties] = useState([]);
+  const [isLoading, setLoading] = useState(false);
+
+  useEffect(() => {
+    fetch("http://localhost:5000/api/listings/get")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setProperties(data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
   return (
     <section className="maxx-padd-container">
       {/* Removed the black section */}
@@ -18,7 +33,7 @@ const Properties = ({ layout = "carousel" }) => {
       {layout === "carousel" ? (
         <Carousel>
           <CarouselContent>
-            {residenciesList.map((property) => (
+            {properties.map((property) => (
               <CarouselItem
                 key={property.id}
                 className="basis-1/3 md:basis-1/5"
@@ -33,7 +48,7 @@ const Properties = ({ layout = "carousel" }) => {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {residenciesList.map((property) => (
-            <div className="basis-1/3 md:basis-1/5" key={property.id}>
+            <div className="basis-1/3 md:basis-1/5" key={property._id}>
               <Item property={property} />
             </div>
           ))}

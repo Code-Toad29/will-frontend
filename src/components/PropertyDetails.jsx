@@ -83,9 +83,11 @@ const PropertyDetails = () => {
   const getPropertyDetails = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3001/properties/${listingId}`
+        `http://localhost:5000/api/listings/get/${listingId}`
       );
       if (!response.ok) {
+        const errors = await response.json();
+        console.log(errors);
         throw new Error("Failed to fetch property details");
       }
       const data = await response.json();
