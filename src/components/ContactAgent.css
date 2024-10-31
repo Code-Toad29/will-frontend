@@ -1,5 +1,5 @@
 /* ContactAgent.css */
-
+/* 
 .contact-agent-container {
     max-width: 600px;
     margin: 2rem auto;
@@ -52,4 +52,82 @@
   
   .contact-agent-form button:hover {
     background-color: #2b6cb0;
+  } */
+
+
+
+
+
+  /* ContactAgent.css */
+
+.contact-agent-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
+  
+  .contact-agent-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .contact-agent-message {
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+  
+  .status-message {
+    margin: 1rem 0;
+    font-weight: bold;
+    color: #3182ce; /* Change color based on success or error */
+  }
+  
+  .contact-agent-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-agent-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .contact-agent-form input,
+  .contact-agent-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .contact-agent-form input:focus,
+  .contact-agent-form textarea:focus {
+    border-color: #3182ce; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .contact-agent-form button {
+    padding: 0.75rem;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-agent-form button:hover {
+    background-color: #2b6cb0;
+  }
+  
+  .contact-agent-form button:disabled {
+    background-color: #a0aec0; /* Greyed out color for loading state */
+    cursor: not-allowed; /* Change cursor to indicate disabled state */
+  }  
