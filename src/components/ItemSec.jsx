@@ -59,7 +59,7 @@ import {
   MdOutlineGarage,
 } from "react-icons/md";
 import { Link } from "react-router-dom";
-import FavButton from "./FavButton";
+import FavButton from "@/components/FavButton";
 
 const Item = ({ property }) => {
   console.log(property);
