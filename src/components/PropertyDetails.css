@@ -1,0 +1,72 @@
+/* PropertyDetails.css */
+
+.property-details {
+    max-width: 800px; /* Limit the width of the details section */
+    margin: 20px auto; /* Center the content */
+    padding: 20px; /* Add padding around the content */
+    border: 1px solid #e0e0e0; /* Light border around the section */
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Deeper shadow for more depth */
+    background-color: #fafafa; /* Light gray background for a softer look */
+}
+
+.property-details h1 {
+    font-size: 2.5em; /* Larger font size for the title */
+    margin-bottom: 15px; /* More space below the title */
+    color: #222; /* Darker color for better readability */
+    text-align: center; /* Center align the title */
+}
+
+.property-details .images {
+    display: flex; /* Use flexbox for image layout */
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    gap: 15px; /* Increased space between images */
+    justify-content: center; /* Center images within the container */
+}
+
+.property-details .property-image {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* More rounded corners for images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow for images */
+    transition: transform 0.2s; /* Smooth scaling on hover */
+}
+
+.property-details .property-image:hover {
+    transform: scale(1.05); /* Scale image slightly on hover */
+}
+
+.property-details p {
+    font-size: 1.2em; /* Slightly larger font for description */
+    color: #444; /* Darker gray color for description text */
+    margin: 15px 0; /* More space above and below paragraphs */
+}
+
+.property-details h3,
+.property-details h4 {
+    color: #4CAF50; /* Green color for headings */
+    margin: 20px 0 10px; /* More space above and below headings */
+}
+
+.property-details ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.property-details ul li {
+    background: #ffffff; /* White background for list items */
+    border: 1px solid #e0e0e0; /* Light border around list items */
+    margin: 5px 0; /* Space between list items */
+    padding: 10px; /* Padding inside list items */
+    border-radius: 5px; /* Rounded corners for list items */
+}
+
+.property-details .error-message {
+    color: red; /* Red color for error messages */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.property-details .no-images {
+    text-align: center; /* Center align the no images message */
+    color: #888; /* Gray color for fallback message */
+}
