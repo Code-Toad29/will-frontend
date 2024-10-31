@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -100,4 +100,42 @@ ul li a:hover{
     .footer-col{
         width: 100%;
     }
+} */
+
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    background-color: #2d2e33;
+    padding: 60px 10%;
+    color: #f1bc0d; /* Default text color for footer */
+}
+
+.footer-col {
+    flex: 1 1 25%; /* Allow flexibility and maintain 4 columns */
+    padding: 0 15px; /* Add some padding for spacing */
+}
+
+.footer-col h4 {
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+.links {
+    display: flex; /* Use flexbox for better alignment */
+    gap: 10px; /* Space between icons */
+}
+
+.links a {
+    color: white; /* Icon color */
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #f1bc0d; /* Change color on hover */
 }
