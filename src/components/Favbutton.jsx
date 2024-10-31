@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaHeart } from "react-icons/fa";
 
-const FavButton = () => {
+function FavButton() {
   const [isFavorited, setIsFavorited] = useState(false);
 
   const handleToggleFavorite = () => {
@@ -19,7 +19,7 @@ const FavButton = () => {
       <FaHeart size={23} />
     </button>
   );
-};
+}
 
 export default FavButton;
 
@@ -52,5 +52,3 @@ export default FavButton;
 //     </button>
 //   );
 // };
-
-// export default FavButton;
