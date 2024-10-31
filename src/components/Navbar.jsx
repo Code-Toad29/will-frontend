@@ -5,6 +5,7 @@
 
 // const Navbar = () => {
 //   const [isOpen, setIsOpen] = useState(false);
+//   const [isHovered, setIsHovered] = useState(false); // State for hover effect
 
 //   const toggleMenu = () => {
 //     setIsOpen(!isOpen);
@@ -18,7 +19,22 @@
 //     <header className="bg-black">
 //       <nav className="container mx-auto flex justify-between items-center py-6">
 //         {/* Logo section */}
-//         <img src="/logo.jpg" alt="Company logo" width={80} />
+//         <div className="relative">
+//           <img
+//             src="/logo.jpg"
+//             alt="Company logo"
+//             width={80}
+//             onMouseEnter={() => setIsHovered(true)} // Show text on hover
+//             onMouseLeave={() => setIsHovered(false)} // Hide text when not hovered
+//           />
+//           {isHovered && (
+//             <span className="absolute left-20 top-1/2 transform -translate-y-1/2 text-yellow-600 font-bold">
+//               {" "}
+//               {/* Added font-bold class */}
+//               RealHome
+//             </span>
+//           )}
+//         </div>
 
 //         {/* Hamburger Menu for Mobile */}
 //         <button className="md:hidden text-yellow-600" onClick={toggleMenu}>

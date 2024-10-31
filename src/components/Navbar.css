@@ -1,8 +1,110 @@
-.h-wrapper{
+/* .h-wrapper{
     background-color: rgb(203, 13, 13);
     display:flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 7%;
     object-fit: cover;
+} */
+
+
+/* Navbar.css */
+
+header {
+    background-color: #000; /* Black background for the header */
+}
+
+nav {
+    max-width: 1200px; /* Limit the width of the navigation */
+    margin: 0 auto; /* Center the navigation */
+}
+
+.logo {
+    width: 80px; /* Fixed width for the logo */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slightly scale the logo on hover */
+}
+
+span {
+    position: absolute; /* Position the company name */
+    left: 100px; /* Adjusted position to the right of the logo */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust position */
+    color: #FFD700; /* Gold color for the company name */
+    font-size: 1.5em; /* Increased font size */
+    font-weight: bold; /* Bold text */
+    transition: opacity 0.3s; /* Smooth transition for opacity */
+}
+
+ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+li {
+    position: relative; /* Position relative for hover effects */
+}
+
+a {
+    color: #FFD700; /* Gold color for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 15px; /* Padding for clickable area */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+a:hover {
+    color: #fff; /* Change text color on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+button {
+    background-color: transparent; /* Transparent button background */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor for button */
+}
+
+.fixed-overlay {
+    position: fixed; /* Fixed position for overlay */
+    inset: 0; /* Cover the entire screen */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    z-index: 10; /* Ensure it is above other elements */
+}
+
+.menu {
+    position: absolute; /* Position absolute for dropdown */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    background-color: #000; /* Black background for dropdown */
+    transition: top 0.3s; /* Smooth transition for dropdown */
+    z-index: 20; /* Ensure it is above the overlay */
+}
+
+.menu ul {
+    flex-direction: column; /* Stack links vertically on mobile */
+}
+
+.menu li {
+    padding: 10px; /* Padding for menu items */
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .menu {
+        position: static; /* Static position for desktop */
+        display: flex; /* Flexbox for horizontal layout */
+        align-items: center; /* Center items vertically */
+    }
+
+    .menu ul {
+        flex-direction: row; /* Row layout for desktop */
+    }
+
+    .menu li {
+        margin-right: 20px; /* Space between menu items */
+    }
 }
