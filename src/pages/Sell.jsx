@@ -10,19 +10,17 @@
 
 // export default Sell;
 
-
-import SellHead from '../components/sellHead'; // Use uppercase for component name
-import React from 'react';
-
+import SellHead from "../components/sellHead"; // Use uppercase for component name
+import React from "react";
+import PropertyInquiryForm from "../components/PropertyInquiryForm";
 const Sell = () => {
   return (
     <div>
-      <header>
-        {/* You can add header content here if needed */}
-      </header>
+      <header>{/* You can add header content here if needed */}</header>
       <SellHead /> {/* Corrected component name */}
+      <PropertyInquiryForm />
     </div>
   );
-}
+};
 
 export default Sell;

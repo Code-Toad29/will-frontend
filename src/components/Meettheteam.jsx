@@ -68,12 +68,12 @@ import "./Meettheteam.css"; // Make sure to import your CSS file
 const people = [
   {
     name: "Eulene Witbooi",
-    role: "Co-Founder / CEO",
+    role: "Senior Estate Agent",
     imageUrl: "/Agents/Eulene Witbooi.jpeg",
   },
   {
     name: "Karbo Lawane",
-    role: "Chief Operating Officer",
+    role: "Senior Estate Agent",
     imageUrl: "/Agents/Karabo Lwane.jpeg",
   },
   {
@@ -93,7 +93,7 @@ const people = [
   },
   {
     name: "Tyee Baartman",
-    role: "Junior Estate Agent",
+    role: " Estate Agent",
     imageUrl: "/Agents/Tyee Baartman.jpeg",
   },
 ];
@@ -107,8 +107,16 @@ export default function Leadership() {
             Meet The Team
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            We’re a dynamic group of individuals who are passionate about what
-            we do and dedicated to delivering the best results for our clients.
+            At RealHomes, our dynamic team of passionate real estate agents is
+            dedicated to serving your needs with personalized, expert guidance.
+            Each member brings unique experience and deep knowledge of local
+            neighborhoods and market trends, ensuring that whether you're a
+            first-time homebuyer or an experienced investor, you receive the
+            support necessary for a successful and enjoyable real estate
+            journey. We prioritize building lasting relationships based on trust
+            and transparency, taking the time to understand your goals and
+            preferences. Join us and meet the team ready to turn your real
+            estate dreams into reality!.
           </p>
         </div>
         <ul
